@@ -1,0 +1,8 @@
+<p>servers works!</p>
+<input [(ngModel)]="servername" (input)="getServerName($event)" />
+<button (click)="onCreateNewServer()" [disabled]="servername === ''">
+  Add Server
+</button>
+<label>{{ servername }}</label>
+<h2>{{ serversuccess }}</h2>
+<app-clients></app-clients>
